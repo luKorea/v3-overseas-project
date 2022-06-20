@@ -5,8 +5,10 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Local: typeof import('./src/components/local.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Swiper: typeof import('./src/components/Swiper/index.vue')['default']
     VanButton: typeof import('vant/es')['Button']
   }
 }
