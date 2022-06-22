@@ -4,6 +4,7 @@ import { createI18n } from "vue-i18n";
 import messages from "./index";
 
 const i18n = createI18n({
+  legacy: false,
   locale: localCache.getCache("lang") || "en",
   messages,
 });
