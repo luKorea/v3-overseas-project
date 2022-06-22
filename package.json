@@ -10,9 +10,11 @@
   "dependencies": {
     "amfe-flexible": "^2.2.1",
     "animate.css": "^4.1.1",
+    "axios": "^0.27.2",
     "core-js": "^3.6.5",
     "normalize.css": "^8.0.1",
     "postcss-pxtorem": "^5.1.1",
+    "qs": "^6.10.5",
     "swiper": "^6.5.6",
     "vant": "^3.5.1",
     "vue": "^3.0.0",
