@@ -14,7 +14,7 @@ module.exports = {
     },
     "postcss-pxtorem": {
       rootValue({ file }) {
-        return file.indexOf("vant") !== -1 ? 37.5 : 75;
+        return file.indexOf("vant") !== -1 ? 37.5 : 37.5;
       }, //结果为：设计稿元素尺寸/16，比如元素宽320px,最终页面会换算成 20rem
       propList: ["*"], //是一个存储哪些将被转换的属性列表，这里设置为['*']全部，假设需要仅对边框进行设置，可以写['*', '!border*']
       unitPrecision: 5, //保留rem小数点多少位

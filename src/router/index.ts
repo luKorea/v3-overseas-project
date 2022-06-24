@@ -4,12 +4,18 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/download",
     name: "downloadComponent",
+    meta: {
+      title: "pofi create",
+    },
     component: () =>
       import(/* webpackChunkName: "download" */ "../views/download/index.vue"),
   },
   {
     path: "/active",
     name: "active",
+    meta: {
+      title: "pofi create",
+    },
     component: () =>
       import(/* webpackChunkName: "active" */ "../views/active/index.vue"),
   },

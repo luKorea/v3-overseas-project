@@ -1,8 +1,9 @@
 import { createApp } from "vue";
 
-import "amfe-flexible";
+import "lib-flexible/flexible";
 import "normalize.css";
 import "animate.css";
+import "./assets/style/index.less";
 
 import App from "./App.vue";
 import router from "./router";

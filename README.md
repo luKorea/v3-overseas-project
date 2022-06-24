@@ -4,7 +4,7 @@
 ## 使用到的组件库
 ### i18n 国际化
 ### vant vantUI库
-### amfe-flexible 移动端适配
+### lib-flexible 移动端适配
 ### postcss-pxtorem px 转 rem
 ### animate.css css 动画库
 ### normalize.css 格式化浏览器默认样式
