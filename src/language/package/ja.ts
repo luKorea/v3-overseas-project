@@ -2,7 +2,7 @@ import { IMG_URL_JA, IMG_URL } from "@/request/config";
 export default {
   name: "ja",
   message: {
-    title: "English title",
+    title: "活動限定無料ドールを取得",
     pageOneImg: IMG_URL_JA + "/one-page.png",
     pageTwo_one: IMG_URL_JA + "/two-one.png",
     pageTwo_two: IMG_URL_JA + "/two-two.png",
