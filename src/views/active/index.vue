@@ -2,7 +2,7 @@
  * @Author: korealu 643949593@qq.com
  * @Date: 2022-06-20 09:51:22
  * @LastEditors: korealu 643949593@qq.com
- * @LastEditTime: 2022-06-25 11:53:25
+ * @LastEditTime: 2022-06-25 14:27:49
  * @FilePath: /v3-overseas-project/src/views/active/index.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -91,8 +91,7 @@ import contactComponent from "./components/contact-us.vue";
 import noticeComponent from "./components/notice.vue";
 
 import { useI18n } from "vue-i18n";
-import { IMG_URL } from "@/request/config";
-import { APPLE_URL, ANDROID_URL } from "../../request/config";
+import { IMG_URL, APPLE_URL, ANDROID_URL } from "@/request/config";
 
 export default defineComponent({
   components: {
