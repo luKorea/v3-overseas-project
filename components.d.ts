@@ -9,7 +9,6 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Swiper: typeof import('./src/components/Swiper/index.vue')['default']
-    VanButton: typeof import('vant/es')['Button']
     VanDivider: typeof import('vant/es')['Divider']
     VanIcon: typeof import('vant/es')['Icon']
     VanPopover: typeof import('vant/es')['Popover']

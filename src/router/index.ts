@@ -2,7 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/download",
+    path: "/pofiDownload",
     name: "downloadComponent",
     meta: {
       title: "pofi create",
@@ -11,7 +11,7 @@ const routes: Array<RouteRecordRaw> = [
       import(/* webpackChunkName: "download" */ "../views/download/index.vue"),
   },
   {
-    path: "/active",
+    path: "/pofiActive",
     name: "active",
     meta: {
       title: "pofi create",

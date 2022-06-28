@@ -1,4 +1,5 @@
 import { IMG_URL_ZH_TW, IMG_URL } from "@/request/config";
+const DOWNLOAD = "/download";
 export default {
   name: "zh-tw",
   message: {
@@ -23,7 +24,7 @@ export default {
         icon: IMG_URL + "/twitter-icon.png",
         title: "twitter",
         urlLink: "@PoficreateEN",
-        url: "https://twitter.com/PoficreateEN",
+        url: "https://twitter.com/PofiCreateTC",
       },
       {
         icon: IMG_URL + "/facebook-icon.png",
@@ -49,7 +50,40 @@ export default {
     ],
     end: "THE END",
   },
+  // 这是下载页面配置
   downloadPage: {
     title: "參與 Pofi Create活動 免費解鎖限定人偶",
+    pageOneImg: IMG_URL_ZH_TW + DOWNLOAD + "/one-page.png",
+    pageTwo_one: IMG_URL_ZH_TW + DOWNLOAD + "/two-one.png",
+    pageTwo_two: IMG_URL_ZH_TW + DOWNLOAD + "/two-two.png",
+    pageTwo_three: IMG_URL_ZH_TW + DOWNLOAD + "/two-three.png",
+    pageThree_one: IMG_URL_ZH_TW + DOWNLOAD + "/three-one.png",
+    pageThree_two: IMG_URL_ZH_TW + DOWNLOAD + "/three-two.png",
+    pageThree_three: IMG_URL_ZH_TW + DOWNLOAD + "/three-three.png",
+    pageFour_one: IMG_URL_ZH_TW + DOWNLOAD + "/four-one.png",
+    pageFour_two: IMG_URL_ZH_TW + DOWNLOAD + "/four-two.png",
+    pageFour_three: IMG_URL_ZH_TW + DOWNLOAD + "/four-three.png",
+    // 联系我们
+    contactTitle: "contact us",
+    contactList: [
+      {
+        icon: IMG_URL + "/twitter-icon.png",
+        title: "twitter",
+        urlLink: "@PoficreateEN",
+        url: "https://twitter.com/PofiCreateTC",
+      },
+      {
+        icon: IMG_URL + "/facebook-icon.png",
+        title: "Facebook",
+        urlLink: "@Poficreate",
+        url: "https://www.facebook.com/PofiCreate",
+      },
+      {
+        icon: IMG_URL + "/ins-icon.png",
+        title: "ins",
+        urlLink: "@Poficreate",
+        url: "https://www.instagram.com/poficreate/",
+      },
+    ],
   },
 };

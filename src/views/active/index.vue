@@ -2,7 +2,7 @@
  * @Author: korealu 643949593@qq.com
  * @Date: 2022-06-20 09:51:22
  * @LastEditors: korealu 643949593@qq.com
- * @LastEditTime: 2022-06-25 14:27:49
+ * @LastEditTime: 2022-06-28 11:48:47
  * @FilePath: /v3-overseas-project/src/views/active/index.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -16,6 +16,7 @@
         style="height: 100%; overflow: hidden"
         :show-indicators="false"
         :loop="false"
+        @change="handleChangeSwipe"
       >
         <template v-for="(item, index) in imgList" :key="index">
           <van-swipe-item>
@@ -34,7 +35,11 @@
             </template>
             <template v-if="item.page === 'two'">
               <div class="item-img">
-                <swiper-component :img-list="item.imgList"></swiper-component>
+                <swiper-component
+                  :img-list="item.imgList"
+                  :timer="3000"
+                  v-if="initialSwipe === 1"
+                ></swiper-component>
                 <div class="download-btn-two">
                   <div class="item" @click="goApp(1)">
                     <img :src="smallDownload.apple" alt="" />
@@ -46,10 +51,38 @@
               </div>
             </template>
             <template v-if="item.page === 'three'">
-              <swiper-component :img-list="item.imgList"></swiper-component>
+              <div class="item-img">
+                <swiper-component
+                  :img-list="item.imgList"
+                  :timer="3000"
+                  v-if="initialSwipe === 2"
+                ></swiper-component>
+                <div class="download-btn-two">
+                  <div class="item" @click="goApp(1)">
+                    <img :src="smallDownload.apple" alt="" />
+                  </div>
+                  <div class="item" @click="goApp(0)">
+                    <img :src="smallDownload.android" alt="" />
+                  </div>
+                </div>
+              </div>
             </template>
             <template v-if="item.page === 'four'">
-              <swiper-component :img-list="item.imgList"></swiper-component>
+              <div class="item-img">
+                <swiper-component
+                  :img-list="item.imgList"
+                  :timer="3000"
+                  v-if="initialSwipe === 3"
+                ></swiper-component>
+                <div class="download-btn-two">
+                  <div class="item" @click="goApp(1)">
+                    <img :src="smallDownload.apple" alt="" />
+                  </div>
+                  <div class="item" @click="goApp(0)">
+                    <img :src="smallDownload.android" alt="" />
+                  </div>
+                </div>
+              </div>
             </template>
             <template v-if="item.page === 'five'">
               <div class="item-img">
@@ -65,7 +98,17 @@
               </div>
             </template>
             <template v-if="item.page === 'six'">
-              <img style="width: 100%; height: 100%" :src="item.img" alt="" />
+              <div class="item-img">
+                <img style="width: 100%; height: 100%" :src="item.img" alt="" />
+                <div class="download-btn-two">
+                  <div class="item" @click="goApp(1)">
+                    <img :src="smallDownload.apple" alt="" />
+                  </div>
+                  <div class="item" @click="goApp(0)">
+                    <img :src="smallDownload.android" alt="" />
+                  </div>
+                </div>
+              </div>
             </template>
             <template v-if="item.page === 'seven'">
               <div class="seven">
@@ -94,6 +137,7 @@ import { useI18n } from "vue-i18n";
 import { IMG_URL, APPLE_URL, ANDROID_URL } from "@/request/config";
 
 export default defineComponent({
+  name: "activePageComponent",
   components: {
     logoComponent,
     contactComponent,
@@ -164,12 +208,18 @@ export default defineComponent({
         window.open(ANDROID_URL);
       }
     };
+    const initialSwipe = ref<number>(0);
+    const handleChangeSwipe = (index: number) => {
+      initialSwipe.value = index;
+    };
     return {
       imgList,
       bigDownload,
       smallDownload,
       blackDownload,
       goApp,
+      initialSwipe,
+      handleChangeSwipe,
     };
   },
 });
@@ -215,7 +265,7 @@ export default defineComponent({
 
       .download-btn-two {
         position: absolute;
-        bottom: 80px;
+        bottom: 50px;
         right: 20px;
         display: flex;
         flex-direction: column;

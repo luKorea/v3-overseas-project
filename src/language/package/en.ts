@@ -1,4 +1,5 @@
 import { IMG_URL_EN, IMG_URL } from "@/request/config";
+const DOWNLOAD = "/download";
 export default {
   name: "en",
   // 这里是领夕页面配置
@@ -53,5 +54,37 @@ export default {
   // 这是下载页面配置
   downloadPage: {
     title: "Pofi Create Exclusive Dolls release",
+    pageOneImg: IMG_URL_EN + DOWNLOAD + "/one-page.png",
+    pageTwo_one: IMG_URL_EN + DOWNLOAD + "/two-one.png",
+    pageTwo_two: IMG_URL_EN + DOWNLOAD + "/two-two.png",
+    pageTwo_three: IMG_URL_EN + DOWNLOAD + "/two-three.png",
+    pageThree_one: IMG_URL_EN + DOWNLOAD + "/three-one.png",
+    pageThree_two: IMG_URL_EN + DOWNLOAD + "/three-two.png",
+    pageThree_three: IMG_URL_EN + DOWNLOAD + "/three-three.png",
+    pageFour_one: IMG_URL_EN + DOWNLOAD + "/four-one.png",
+    pageFour_two: IMG_URL_EN + DOWNLOAD + "/four-two.png",
+    pageFour_three: IMG_URL_EN + DOWNLOAD + "/four-three.png",
+    // 联系我们
+    contactTitle: "contact us",
+    contactList: [
+      {
+        icon: IMG_URL + "/twitter-icon.png",
+        title: "twitter",
+        urlLink: "@PoficreateEN",
+        url: "https://twitter.com/PoficreateEN",
+      },
+      {
+        icon: IMG_URL + "/facebook-icon.png",
+        title: "Facebook",
+        urlLink: "@Poficreate",
+        url: "https://www.facebook.com/PofiCreate",
+      },
+      {
+        icon: IMG_URL + "/ins-icon.png",
+        title: "ins",
+        urlLink: "@Poficreate",
+        url: "https://www.instagram.com/poficreate/",
+      },
+    ],
   },
 };

@@ -2,12 +2,16 @@
  * @Author: korealu 643949593@qq.com
  * @Date: 2022-06-24 14:01:45
  * @LastEditors: korealu 643949593@qq.com
- * @LastEditTime: 2022-06-24 15:04:13
+ * @LastEditTime: 2022-06-28 11:44:23
  * @FilePath: /v3-overseas-project/src/views/active/components/page-two.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 <template>
-  <van-swipe style="height: 100%; width: 100%; box-sizing: border-box">
+  <van-swipe
+    style="height: 100%; width: 100%; box-sizing: border-box"
+    :autoplay="timer"
+    lazy-render
+  >
     <template
       v-for="(item, index) in imgList"
       :key="index"
@@ -27,7 +31,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, PropType, onMounted } from "vue";
 
 export default defineComponent({
   props: {
@@ -35,8 +39,15 @@ export default defineComponent({
       type: Array as PropType<string[]>,
       default: () => [],
     },
+    timer: {
+      type: Number,
+      default: 3000,
+    },
   },
-  setup() {
+  setup(props) {
+    onMounted(() => {
+      console.log(props, "props");
+    });
     return {};
   },
 });

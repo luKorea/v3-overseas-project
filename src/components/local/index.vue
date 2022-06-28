@@ -2,14 +2,14 @@
  * @Author: korealu 643949593@qq.com
  * @Date: 2022-06-20 10:54:48
  * @LastEditors: korealu 643949593@qq.com
- * @LastEditTime: 2022-06-24 16:46:10
+ * @LastEditTime: 2022-06-28 11:27:39
  * @FilePath: /v3-mobile-template/src/global/local.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 <template>
   <van-sticky>
     <div class="logo-wrap">
-      <div class="logo-img">
+      <div class="logo-img" @click="goPage">
         <img :src="logoImg" alt="" />
       </div>
 
@@ -41,6 +41,7 @@
 import { localCache } from "@/utils/cache";
 import { defineComponent, ref, computed } from "vue";
 import { useI18n } from "vue-i18n";
+import { useRouter } from "vue-router";
 import { IMG_URL } from "../../request/config";
 export default defineComponent({
   name: "localComponent",
@@ -84,6 +85,12 @@ export default defineComponent({
       localCache.setCache("lang", language.value);
       window.location.reload();
     };
+    const router = useRouter();
+    const goPage = () => {
+      router.push({
+        path: "/pofiDownload",
+      });
+    };
     return {
       logoImg,
       languageImg,
@@ -91,6 +98,7 @@ export default defineComponent({
       showPopover,
       actions,
       selectItem,
+      goPage,
     };
   },
 });
