@@ -2,17 +2,17 @@
  * @Author: korealu 643949593@qq.com
  * @Date: 2022-06-24 09:12:46
  * @LastEditors: korealu 643949593@qq.com
- * @LastEditTime: 2022-06-28 11:11:51
+ * @LastEditTime: 2022-06-28 14:06:07
  * @FilePath: /v3-overseas-project/src/views/active/components/contact-us.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 <template>
   <div class="download-contact">
     <div class="contact-wrap">
-      <div class="shadow-title">{{ $tm("message.contactTitle") }}</div>
-      <div class="big-title">{{ $tm("message.contactTitle") }}</div>
+      <div class="shadow-title">{{ $tm("downloadPage.contactTitle") }}</div>
+      <div class="big-title">{{ $tm("downloadPage.contactTitle") }}</div>
       <template
-        v-for="(item, index) in $tm('message.contactList')"
+        v-for="(item, index) in $tm('downloadPage.contactList')"
         :key="index"
       >
         <div class="contact-item" @click="goInfo(item.url)">
