@@ -49,4 +49,7 @@ export default {
     ],
     end: "THE END",
   },
+  downloadPage: {
+    title: "活動限定無料ドールを取得",
+  },
 };

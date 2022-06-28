@@ -1,6 +1,7 @@
 import { IMG_URL_EN, IMG_URL } from "@/request/config";
 export default {
   name: "en",
+  // 这里是领夕页面配置
   message: {
     title: "Pofi Create Exclusive Dolls release",
     pageOneImg: IMG_URL_EN + "/one-page.png",
@@ -48,5 +49,9 @@ export default {
       "Please browse the rules and instructions of this activity carefully, participation in this activity will be regarded as fully understanding and accepting and approving the rules of this activity. All Rights Reserved by Pofi Create.",
     ],
     end: "THE END",
+  },
+  // 这是下载页面配置
+  downloadPage: {
+    title: "Pofi Create Exclusive Dolls release",
   },
 };

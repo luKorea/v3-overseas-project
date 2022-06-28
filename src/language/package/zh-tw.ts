@@ -49,4 +49,7 @@ export default {
     ],
     end: "THE END",
   },
+  downloadPage: {
+    title: "參與 Pofi Create活動 免費解鎖限定人偶",
+  },
 };
