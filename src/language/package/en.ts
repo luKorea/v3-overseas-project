@@ -53,7 +53,7 @@ export default {
   },
   // 这是下载页面配置
   downloadPage: {
-    title: "Pofi Create Exclusive Dolls release",
+    title: "PofiCreate--the best one for painting reference",
     pageOneImg: IMG_URL_EN + DOWNLOAD + "/one-page.png",
     pageTwo_one: IMG_URL_EN + DOWNLOAD + "/two-one.png",
     pageTwo_two: IMG_URL_EN + DOWNLOAD + "/two-two.png",

@@ -1,6 +1,8 @@
 import { createApp } from "vue";
 
 import "lib-flexible/flexible";
+// vant桌面端适配
+import "@vant/touch-emulator";
 import "normalize.css";
 import "animate.css";
 import "./assets/style/index.less";
