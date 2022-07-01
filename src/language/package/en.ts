@@ -42,6 +42,8 @@ export default {
     ],
     // 活动通知
     noticeTitle: "Activity Notice",
+    openBtn: "More",
+    closeBtn: "Put away",
     noticeList: [
       "The activity is of long-term validity.",
       "The recharged or gifted items will be directly distributed to the corresponding Pofi ID. Please confirm your Pofi ID carefully before payment.",

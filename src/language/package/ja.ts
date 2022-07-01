@@ -18,7 +18,7 @@ export default {
     pageFiveImg: IMG_URL_JA + "/five-page.png",
     pageSixImg: IMG_URL_JA + "/six-page.png",
     // 联系我们
-    contactTitle: "contact us",
+    contactTitle: "お問い合わせ",
     contactList: [
       {
         icon: IMG_URL + "/twitter-icon.png",
@@ -40,13 +40,15 @@ export default {
       },
     ],
     // 活动通知
-    noticeTitle: "Activity Japan",
+    noticeTitle: "活動ノート",
+    openBtn: "展開",
+    closeBtn: "折りたたみ",
     noticeList: [
-      "The activity is of long-term validity.",
-      "The recharged or gifted items will be directly distributed to the corresponding Pofi ID. Please confirm your Pofi ID carefully before payment.",
-      "This discount can only be obtained by participating in the current event page. The discount cannot be enjoyed by in-app recharge. This activity does not participate in other recharge promotions.",
-      "The content of this activity is a virtual service, in case of data abnormality, please contact customer service.",
-      "Please browse the rules and instructions of this activity carefully, participation in this activity will be regarded as fully understanding and accepting and approving the rules of this activity. All Rights Reserved by Pofi Create.",
+      "この活動は長期間有効です。",
+      "リチャージまたはギフトされたアイテムは、対応するPofi IDに直接発行されます。支払い前に、Pofi IDをよく確認してください。",
+      "この割引は現在の活動ページでのみ利用可能で、アプリ内リチャージでは利用できません。この活動は他のリチャージプロモーションには参加しません。",
+      "本活動の内容は仮想サービスであり、データに異常がある場合、カスタマーサービスに連絡してください。",
+      "この活動の規則と指示をよく読んでください。この活動に参加すると、この活動の規則を完全に理解し、受け入れ、承認したものと見なされます。最終解釈権が弊社に属します。",
     ],
     end: "THE END",
   },
@@ -64,7 +66,7 @@ export default {
     pageFour_two: IMG_URL_JA + DOWNLOAD + "/four-two.png",
     pageFour_three: IMG_URL_JA + DOWNLOAD + "/four-three.png",
     // 联系我们
-    contactTitle: "contact us",
+    contactTitle: "お問い合わせ",
     contactList: [
       {
         icon: IMG_URL + "/twitter-icon.png",

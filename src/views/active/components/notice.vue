@@ -2,7 +2,7 @@
  * @Author: korealu 643949593@qq.com
  * @Date: 2022-06-24 09:13:17
  * @LastEditors: korealu 643949593@qq.com
- * @LastEditTime: 2022-06-24 16:54:47
+ * @LastEditTime: 2022-07-01 17:48:07
  * @FilePath: /v3-overseas-project/src/views/active/components/notice.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -18,7 +18,9 @@
         <div class="notice-item" v-if="index === 1">
           {{ index + 1 }}. {{ item }}
           <span class="notice-tip">
-            <span class="notice-more" @click="showMore = true">More </span>
+            <span class="notice-more" @click="showMore = true">
+              {{ $t("message.openBtn") }}
+            </span>
             <span class="notice-corner"> &#9660; </span>
           </span>
         </div>
@@ -27,7 +29,9 @@
         <div class="notice-item" v-if="index === 4">
           {{ index + 1 }}. {{ item }}
           <span class="notice-tip">
-            <span class="notice-more" @click="showMore = false">Put away </span>
+            <span class="notice-more" @click="showMore = false">{{
+              $t("message.closeBtn")
+            }}</span>
             <span class="notice-corner">&#9650; </span>
           </span>
         </div>
