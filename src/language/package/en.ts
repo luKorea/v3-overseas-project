@@ -4,6 +4,7 @@ export default {
   name: "en",
   // 这里是领夕页面配置
   message: {
+    name: "en",
     title: "Pofi Create Exclusive Dolls release",
     pageOneImg: IMG_URL_EN + "/one-page.png",
     pageTwo_one: IMG_URL_EN + "/two-one.png",

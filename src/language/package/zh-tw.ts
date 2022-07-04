@@ -3,6 +3,7 @@ const DOWNLOAD = "/download";
 export default {
   name: "zh-tw",
   message: {
+    name: "zh-tw",
     title: "參與 Pofi Create活動 免費解鎖限定人偶",
     pageOneImg: IMG_URL_ZH_TW + "/one-page.png",
     pageTwo_one: IMG_URL_ZH_TW + "/two-one.png",
@@ -18,7 +19,7 @@ export default {
     pageFiveImg: IMG_URL_ZH_TW + "/five-page.png",
     pageSixImg: IMG_URL_ZH_TW + "/six-page.png",
     // 联系我们
-    contactTitle: "contact us",
+    contactTitle: "聯系我們",
     contactList: [
       {
         icon: IMG_URL + "/twitter-icon.png",
@@ -40,13 +41,15 @@ export default {
       },
     ],
     // 活动通知
-    noticeTitle: "Activity Japan",
+    noticeTitle: "活動須知",
+    openBtn: "展開",
+    closeBtn: "收起",
     noticeList: [
-      "The activity is of long-term validity.",
-      "The recharged or gifted items will be directly distributed to the corresponding Pofi ID. Please confirm your Pofi ID carefully before payment.",
-      "This discount can only be obtained by participating in the current event page. The discount cannot be enjoyed by in-app recharge. This activity does not participate in other recharge promotions.",
-      "The content of this activity is a virtual service, in case of data abnormality, please contact customer service.",
-      "Please browse the rules and instructions of this activity carefully, participation in this activity will be regarded as fully understanding and accepting and approving the rules of this activity. All Rights Reserved by Pofi Create.",
+      "本次活動長期有效。",
+      "本次充值或贈送的物品均為直接發放到對應Pofi ID中，請在支付前仔細確認到賬的Pofi ID；",
+      "本優惠僅限當前活動頁中參與獲得，APP內充值無法享受此優惠，本活動不參與其他充值優惠活動；",
+      "本活動內容屬於虛擬服務，如遇數據異常，請聯系客服處理；",
+      "請仔細瀏覽本活動規則與說明，參與本活動將視為充分理解和接受並認可本次活動規則。最終解釋權歸Pofi Create所有。",
     ],
     end: "THE END",
   },
@@ -64,7 +67,7 @@ export default {
     pageFour_two: IMG_URL_ZH_TW + DOWNLOAD + "/four-two.png",
     pageFour_three: IMG_URL_ZH_TW + DOWNLOAD + "/four-three.png",
     // 联系我们
-    contactTitle: "contact us",
+    contactTitle: "聯系我們",
     contactList: [
       {
         icon: IMG_URL + "/twitter-icon.png",

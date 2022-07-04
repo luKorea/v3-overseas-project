@@ -2,7 +2,7 @@
  * @Author: korealu 643949593@qq.com
  * @Date: 2022-06-24 09:13:17
  * @LastEditors: korealu 643949593@qq.com
- * @LastEditTime: 2022-07-01 17:48:07
+ * @LastEditTime: 2022-07-04 09:38:02
  * @FilePath: /v3-overseas-project/src/views/active/components/notice.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -63,7 +63,7 @@ export default defineComponent({
   font-size: 14px;
   font-family: NexaBold;
   color: #ffffff;
-  line-height: 16px;
+  line-height: 17px;
   margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0;

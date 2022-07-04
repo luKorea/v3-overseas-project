@@ -3,6 +3,7 @@ const DOWNLOAD = "/download";
 export default {
   name: "ja",
   message: {
+    name: "ja",
     title: "活動限定無料ドールを取得",
     pageOneImg: IMG_URL_JA + "/one-page.png",
     pageTwo_one: IMG_URL_JA + "/two-one.png",
