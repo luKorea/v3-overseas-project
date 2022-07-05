@@ -35,3 +35,11 @@ export function getUserIP(onNewIP: any): any {
     ice.candidate.candidate.match(ipRegex).forEach(iterateIP);
   };
 }
+
+// 手动添加mate标签
+export const addMeta = (name: string, content: string): any => {
+  const meta = document.createElement("meta");
+  meta.content = content;
+  meta.name = name;
+  document.getElementsByTagName("head")[0].appendChild(meta);
+};

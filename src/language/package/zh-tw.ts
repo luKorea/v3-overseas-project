@@ -5,6 +5,7 @@ export default {
   message: {
     name: "zh-tw",
     title: "參與 Pofi Create活動 免費解鎖限定人偶",
+    keywords: "素描、藝術創作、雕塑、3D、BJD人偶、資源",
     pageOneImg: IMG_URL_ZH_TW + "/one-page.png",
     pageTwo_one: IMG_URL_ZH_TW + "/two-one.png",
     pageTwo_two: IMG_URL_ZH_TW + "/two-two.png",
@@ -55,7 +56,8 @@ export default {
   },
   // 这是下载页面配置
   downloadPage: {
-    title: "參與 Pofi Create活動 免費解鎖限定人偶",
+    title: "次世代繪畫參考--Pofi Create 絕無僅有的另类體驗！",
+    keywords: "素描、藝術創作、雕塑、3D、BJD人偶、資源",
     pageOneImg: IMG_URL_ZH_TW + DOWNLOAD + "/one-page.png",
     pageTwo_one: IMG_URL_ZH_TW + DOWNLOAD + "/two-one.png",
     pageTwo_two: IMG_URL_ZH_TW + DOWNLOAD + "/two-two.png",

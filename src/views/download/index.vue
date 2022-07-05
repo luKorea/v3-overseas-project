@@ -2,7 +2,7 @@
  * @Author: korealu 643949593@qq.com
  * @Date: 2022-06-20 09:51:22
  * @LastEditors: korealu 643949593@qq.com
- * @LastEditTime: 2022-06-28 11:46:42
+ * @LastEditTime: 2022-07-05 11:06:55
  * @FilePath: /v3-overseas-project/src/views/active/index.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -107,6 +107,7 @@ import contactComponent from "./components/contact-us.vue";
 
 import { useI18n } from "vue-i18n";
 import { IMG_URL, APPLE_URL, ANDROID_URL } from "@/request/config";
+import { addMeta } from "@/utils";
 
 export default defineComponent({
   name: "downloadPageComponent",
@@ -119,6 +120,7 @@ export default defineComponent({
     const { t } = useI18n();
     const initialSwipe = ref<number>(0);
     document.title = t("downloadPage.title");
+    addMeta("keywords", t("downloadPage.keywords"));
     const bigDownload = ref<any>({
       apple: IMG_URL + "/apple-download.png",
       android: IMG_URL + "/android-download.png",

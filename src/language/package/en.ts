@@ -6,6 +6,7 @@ export default {
   message: {
     name: "en",
     title: "Pofi Create Exclusive Dolls release",
+    keywords: "素描、藝術創作、雕塑、3D、BJD人偶、資源",
     pageOneImg: IMG_URL_EN + "/one-page.png",
     pageTwo_one: IMG_URL_EN + "/two-one.png",
     pageTwo_two: IMG_URL_EN + "/two-two.png",
@@ -56,7 +57,8 @@ export default {
   },
   // 这是下载页面配置
   downloadPage: {
-    title: "PofiCreate--the best one for painting reference",
+    title: "Pofi Create - Best reference app for your creation",
+    keywords: "素描、藝術創作、雕塑、3D、BJD人偶、資源",
     pageOneImg: IMG_URL_EN + DOWNLOAD + "/one-page.png",
     pageTwo_one: IMG_URL_EN + DOWNLOAD + "/two-one.png",
     pageTwo_two: IMG_URL_EN + DOWNLOAD + "/two-two.png",

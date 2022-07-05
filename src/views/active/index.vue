@@ -2,7 +2,7 @@
  * @Author: korealu 643949593@qq.com
  * @Date: 2022-06-20 09:51:22
  * @LastEditors: korealu 643949593@qq.com
- * @LastEditTime: 2022-07-01 18:01:14
+ * @LastEditTime: 2022-07-05 11:06:01
  * @FilePath: /v3-overseas-project/src/views/active/index.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -135,6 +135,7 @@ import noticeComponent from "./components/notice.vue";
 
 import { useI18n } from "vue-i18n";
 import { IMG_URL, APPLE_URL, ANDROID_URL } from "@/request/config";
+import { addMeta } from "@/utils";
 
 export default defineComponent({
   name: "activePageComponent",
@@ -147,6 +148,7 @@ export default defineComponent({
   setup() {
     const { t } = useI18n();
     document.title = t("message.title");
+    addMeta("keywords", t("message.keywords"));
     const bigDownload = ref<any>({
       apple: IMG_URL + "/apple-download.png",
       android: IMG_URL + "/android-download.png",

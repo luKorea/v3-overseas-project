@@ -5,6 +5,7 @@ export default {
   message: {
     name: "ja",
     title: "活動限定無料ドールを取得",
+    keywords: "素描、藝術創作、雕塑、3D、BJD人偶、資源",
     pageOneImg: IMG_URL_JA + "/one-page.png",
     pageTwo_one: IMG_URL_JA + "/two-one.png",
     pageTwo_two: IMG_URL_JA + "/two-two.png",
@@ -55,7 +56,8 @@ export default {
   },
   // 这是下载页面配置
   downloadPage: {
-    title: "活動限定無料ドールを取得",
+    title: "Pofi Createー宇宙最強の参考アプリ",
+    keywords: "素描、藝術創作、雕塑、3D、BJD人偶、資源",
     pageOneImg: IMG_URL_JA + DOWNLOAD + "/one-page.png",
     pageTwo_one: IMG_URL_JA + DOWNLOAD + "/two-one.png",
     pageTwo_two: IMG_URL_JA + DOWNLOAD + "/two-two.png",
