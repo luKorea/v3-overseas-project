@@ -1,0 +1,71 @@
+/* 这里编写一些混入代码 */
+.flex-basic {
+  display: flex;
+}
+
+// 针对列布局
+.flex-column {
+  .flex-basic();
+  flex-direction: column;
+}
+.flex-column-both-center {
+  .flex-column();
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-justify-center {
+  .flex-column();
+  justify-content: center;
+}
+.flex-column-justify-between {
+  .flex-column();
+  justify-content: space-between;
+}
+.flex-column-justify-around {
+  .flex-column();
+  justify-content: space-around;
+}
+.flex-column-justify-evenly {
+  .flex-column();
+  justify-content: space-evenly;
+}
+
+.flex-column-align-center {
+  .flex-column();
+  align-items: center;
+}
+
+// 针对行布局
+.flex-row {
+  .flex-basic();
+  flex-direction: row;
+}
+.flex-row-both-center {
+  .flex-row();
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-justify-center {
+  .flex-row();
+  justify-content: center;
+}
+.flex-row-justify-between {
+  .flex-row();
+  justify-content: space-between;
+}
+.flex-row-justify-around {
+  .flex-row();
+  justify-content: space-around;
+}
+.flex-row-justify-evenly {
+  .flex-row();
+  justify-content: space-evenly;
+}
+
+
+.flex-row-align-center {
+  .flex-row();
+  align-items: center;
+}
